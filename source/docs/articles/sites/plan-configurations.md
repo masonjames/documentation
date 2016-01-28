@@ -23,14 +23,14 @@ Your site configurations depend on your current plan. The Pantheon platform scal
         <td>1</td>
         <td>1</td>
         <td>2</td>
-        <td>4-8</td>
+        <td>2+</td>
       </tr>
       <tr>
         <th scope="row" class="thead-inverse">ngnix</th>
         <td>Worker Processes: 2</td>
         <td>Worker Processes: 4</td>
         <td>Worker Processes: 8</td>
-        <td>Worker Processes: Varies</td>
+        <td>Worker Processes: 4/App Server</td>
       </tr>
       <tr>
         <th scope="row" class="thead-inverse">MySQL</th>
@@ -43,8 +43,8 @@ Your site configurations depend on your current plan. The Pantheon platform scal
         <th scope="row" class="thead-inverse">PHP</th>
         <td>Memory Limit: 512<br>APC SHM Size: 128<br>FPM Max Children: 4</td>
         <td>Memory Limit: 768<br>APC SHM Size: 256<br>FPM Max Children: 8</td>
-        <td>Memory Limit: 768<br>APC SHM Size: 256</td>
-        <td>Memory Limit: 1024</td>
+        <td>Memory Limit: 768<br>APC SHM Size: 256<br>FPM Max Children: 16</td>
+        <td>Memory Limit: 1024<br>APC SHM Size: 256<br>FPM Max Children: 8/App Server</td>
       </tr>
       <tr>
         <th scope="row" class="thead-inverse">Redis</th>
