@@ -14,7 +14,7 @@ Your site configurations depend on your current plan. The Pantheon platform scal
         <th>Personal</th>
         <th>Professional</th>
         <th>Business</th>
-        <th>Enterprise</th>
+        <th>Elite</th>
       </tr>
     </thead>
     <tbody>
