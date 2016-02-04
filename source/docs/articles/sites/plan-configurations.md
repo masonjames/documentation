@@ -3,7 +3,7 @@ title: Site Configurations by Plan
 description: Get detailed information about site configurations per plan.
 keywords: site, RAM, pantheon, backup, plan
 ---
-Your site configurations depend on your current plan. The Pantheon platform scales instantly, so changing your service level will immediately change your resources to the values for the new plan, as shown in the table below.
+Your site configurations depend on your current plan. The Pantheon platform scales at the speed of software. Changing your service level will quickly change your resources to the values for the new plan, as shown in the table below.
 
 ## Site Configurations
 
@@ -30,7 +30,14 @@ Your site configurations depend on your current plan. The Pantheon platform scal
         <td>Worker Processes: 2</td>
         <td>Worker Processes: 4</td>
         <td>Worker Processes: 8</td>
-        <td>Worker Processes: 4/App Server</td>
+        <td>Worker Processes: 8 + 4/App Server</td>
+      </tr>
+      <tr>
+        <th scope="row" class="thead-inverse">PHP</th>
+        <td>Memory Limit: 512<br>APC SHM Size: 128<br>FPM Max Children: 4</td>
+        <td>Memory Limit: 768<br>APC SHM Size: 256<br>FPM Max Children: 8</td>
+        <td>Memory Limit: 768<br>APC SHM Size: 256<br>FPM Max Children: 16</td>
+        <td>Memory Limit: 1024<br>APC SHM Size: 256<br>FPM Max Children: 16 + 8/App Server</td>
       </tr>
       <tr>
         <th scope="row" class="thead-inverse">MySQL</th>
@@ -40,15 +47,8 @@ Your site configurations depend on your current plan. The Pantheon platform scal
         <td>Query Cache Size: 512<br>Innodb Buffer Pool Size: 8192-16384<br>Memory Limit: 10240</td>
       </tr>
       <tr>
-        <th scope="row" class="thead-inverse">PHP</th>
-        <td>Memory Limit: 512<br>APC SHM Size: 128<br>FPM Max Children: 4</td>
-        <td>Memory Limit: 768<br>APC SHM Size: 256<br>FPM Max Children: 8</td>
-        <td>Memory Limit: 768<br>APC SHM Size: 256<br>FPM Max Children: 16</td>
-        <td>Memory Limit: 1024<br>APC SHM Size: 256<br>FPM Max Children: 8/App Server</td>
-      </tr>
-      <tr>
         <th scope="row" class="thead-inverse">Redis</th>
-        <td>Memory Limit: 64<br>Max Memory: 51</td>
+        <td>Unavailable</td>
         <td>Memory Limit: 256<br>Max Memory: 235</td>
         <td>Memory Limit: 512<br>Max Memory: 471</td>
         <td>Memory Limit: 1024 - 17124<br>Max Memory: 16777</td>
